@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anirudh R — Full-Stack Architect & AI Systems Engineer</title>
+  <meta name="description" content="Portfolio of Anirudh R, a Full-Stack Architect & AI Systems Engineer specializing in distributed high-concurrency systems, autonomous agent loops, and next-generation interactive web experiences.">
+  <meta name="keywords" content="Anirudh R, Full Stack Developer, AI Engineer, Distributed Systems, Software Architect, WebGL, TypeScript, Python, Rust">
+  <meta name="author" content="Anirudh R">
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:title" content="Anirudh R — Full-Stack Architect & AI Systems Engineer">
+  <meta property="og:description" content="Architecting high-concurrency distributed backends, autonomous agent workflows, and ultra-fluid interactive web applications.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/avatar.jpg">
+  
+  <meta name="theme-color" content="#07080c">
+
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Cursor Glow Spotlight -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Interactive Constellation Particle Canvas -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- Floating Glassmorphic Navbar -->
+  <header class="navbar-wrapper" id="top-navbar-wrapper">
+    <nav class="navbar" id="main-nav" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand" id="brand-logo" aria-label="Anirudh R Portfolio Home">
+        <span class="brand-badge">AR</span>
+        <span>Anirudh<span class="gradient-text">.dev</span></span>
+      </a>
+
+      <ul class="nav-links" id="desktop-nav-links">
+        <li><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
+        <li><a href="#experience" class="nav-link" id="nav-link-experience">Journey</a></li>
+        <li><a href="#playground" class="nav-link" id="nav-link-playground">Terminal</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Command Palette Shortcut Button -->
+        <button class="cmd-k-trigger" id="navbar-cmd-k" title="Open Command Palette (Ctrl+K)" aria-label="Open Command Palette">
+          <span>Search</span>
+          <kbd class="cmd-key">Ctrl+K</kbd>
+        </button>
+
+        <!-- Sound FX Toggle Button -->
+        <button class="icon-btn" id="sound-toggle" title="Toggle Sound Effects" aria-label="Toggle Sound Effects">
+          🔇
+        </button>
+
+        <!-- Get In Touch Primary Button -->
+        <a href="#contact" class="primary-btn" id="nav-cta-btn">
+          <span>Get in Touch</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-main-title">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-text-content">
+            <div class="hero-status-badge" id="hero-status-pill">
+              <span class="status-pulse" aria-hidden="true"></span>
+              <span>Available for High-Impact Roles & Consulting</span>
+            </div>
+
+            <h1 class="hero-title" id="hero-main-title">
+              Architecting Next-Gen <br>
+              <span class="gradient-text">Web & AI Systems</span>
+              <div class="kinetic-pill-container" id="kinetic-pill-container">
+                <div class="kinetic-pill-track" id="kinetic-pill-track">
+                  <div class="kinetic-pill-item active" data-index="0">
+                    <span class="pill-sparkle">✦</span>
+                    <span class="pill-text">Full-Stack Architect</span>
+                    <span class="pill-tag cyan">Production Ready</span>
+                  </div>
+                  <div class="kinetic-pill-item" data-index="1">
+                    <span class="pill-sparkle">🧠</span>
+                    <span class="pill-text">AI & LLM Systems Engineer</span>
+                    <span class="pill-tag purple">Multi-Agent</span>
+                  </div>
+                  <div class="kinetic-pill-item" data-index="2">
+                    <span class="pill-sparkle">⚡</span>
+                    <span class="pill-text">Distributed Systems Dev</span>
+                    <span class="pill-tag emerald">1.4M RPS</span>
+                  </div>
+                  <div class="kinetic-pill-item" data-index="3">
+                    <span class="pill-sparkle">✨</span>
+                    <span class="pill-text">Creative WebGL Technologist</span>
+                    <span class="pill-tag pink">60 FPS 4K</span>
+                  </div>
+                </div>
+              </div>
+            </h1>
+
+            <p class="hero-description" id="hero-bio-desc">
+              I specialize in engineering high-concurrency distributed backends, autonomous multi-agent AI loops, and visceral, zero-latency user interfaces. Bridging raw computing performance with high-art aesthetic design.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#projects" class="primary-btn" id="hero-cta-projects">
+                <span>Explore Work</span>
+                <span aria-hidden="true">⚡</span>
+              </a>
+
+              <a href="#playground" class="secondary-btn" id="hero-cta-terminal">
+                <span>Interactive Terminal</span>
+                <span aria-hidden="true">💻</span>
+              </a>
+
+              <button class="secondary-btn copy-email-btn" id="hero-copy-email-btn" title="Copy email address to clipboard">
+                <span>Copy Email</span>
+                <span aria-hidden="true">📋</span>
+              </button>
+            </div>
+
+            <div class="hero-socials">
+              <span class="social-label">Coordinates:</span>
+              <div class="social-links-list">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill" id="social-github">
+                  <span>GitHub</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill" id="social-linkedin">
+                  <span>LinkedIn</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-pill" id="social-twitter">
+                  <span>X (Twitter)</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="mailto:anirudh.eng@outlook.com" class="social-pill" id="social-email-direct">
+                  <span>anirudh.eng@outlook.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Cyber Showcase Tile -->
+          <div class="hero-visual">
+            <div class="floating-chip top-right" aria-hidden="true">
+              <span>🧠</span> <span>Autonomous AI Workflows</span>
+            </div>
+
+            <div class="floating-chip bottom-left" aria-hidden="true">
+              <span>⚡</span> <span>1.4M RPS Low-Latency Mesh</span>
+            </div>
+
+            <div class="hero-showcase-tile" id="hero-avatar-card">
+              <!-- Animated Cyber Border Glow -->
+              <div class="cyber-border-beam" aria-hidden="true"></div>
+              
+              <!-- HUD Corner Brackets -->
+              <div class="hud-corner top-left" aria-hidden="true"></div>
+              <div class="hud-corner top-right" aria-hidden="true"></div>
+              <div class="hud-corner bottom-left" aria-hidden="true"></div>
+              <div class="hud-corner bottom-right" aria-hidden="true"></div>
+
+              <div class="hero-avatar-wrapper">
+                <img src="assets/avatar.jpg" alt="Portrait of Anirudh R" class="hero-avatar-img" id="hero-portrait-img">
+                <div class="avatar-badge-float">
+                  <div>
+                    <div class="avatar-badge-name">Anirudh R</div>
+                    <div class="avatar-badge-title">Systems & AI Architect</div>
+                  </div>
+                  <div class="status-pulse" title="Online & Active" aria-label="Online"></div>
+                </div>
+              </div>
+
+              <div class="hero-metrics-pill-grid">
+                <div class="mini-stat-card">
+                  <div class="mini-stat-num">5+ Years</div>
+                  <div class="mini-stat-label">Shipping Scaled Code</div>
+                </div>
+                <div class="mini-stat-card">
+                  <div class="mini-stat-num">99.99%</div>
+                  <div class="mini-stat-label">Target Architecture Uptime</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TELEMETRY METRICS STRIP ==================== -->
+    <section class="stats-strip" aria-label="Key Performance Indicators">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item" id="stat-latency">
+            <div class="stat-value gradient-text">&lt;25ms</div>
+            <div class="stat-title">P99 Query & Edge Latency</div>
+          </div>
+          <div class="stat-item" id="stat-requests">
+            <div class="stat-value gradient-text">1.4M+</div>
+            <div class="stat-title">Peak Ingestion RPS Handled</div>
+          </div>
+          <div class="stat-item" id="stat-projects">
+            <div class="stat-value gradient-text">15+</div>
+            <div class="stat-title">Production Systems Shipped</div>
+          </div>
+          <div class="stat-item" id="stat-uptime">
+            <div class="stat-value gradient-text">98.6%</div>
+            <div class="stat-title">Multi-Turn Agent Task Accuracy</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section-wrapper" id="about" aria-labelledby="about-section-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">About Me</div>
+          <h2 class="section-title" id="about-section-heading">Crafting at the Intersection of <span class="gradient-text">Speed & Elegance</span></h2>
+          <p class="section-subtitle">A brief glimpse into my engineering mindset, architectural foundations, and driving curiosity.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-column">
+            <p class="about-bio-text">
+              Hello! I'm Anirudh, a software engineer and systems architect passionate about constructing ultra-scalable platforms and intuitive, delightful user interfaces. Over the last half-decade, I have designed resilient cloud runtimes, orchestrated stateful multi-agent generative AI networks, and engineered high-frame-rate browser graphics engines.
+            </p>
+            <p class="about-bio-text">
+              My design ethos is straightforward: <strong>software should feel instantaneous, intuitive, and visually awe-inspiring</strong>. Whether tuning Linux kernel eBPF probes for telemetry, pruning vector graph latencies, or building glassmorphic web dashboards, I take pride in obsessive attention to detail.
+            </p>
+
+            <blockquote class="about-quote">
+              "Excellence is not an accident; it is the deliberate habit of refining every layer from the database index to the micro-animation."
+            </blockquote>
+
+            <div style="display: flex; gap: 16px; align-items: center;">
+              <a href="#contact" class="primary-btn" id="about-collab-btn">
+                <span>Let's Build Together</span>
+                <span aria-hidden="true">→</span>
+              </a>
+              <button class="secondary-btn copy-email-btn" id="about-email-btn">
+                <span>Copy Email</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon">⚡</div>
+              <div class="highlight-content">
+                <h4>Obsessed with Zero Latency</h4>
+                <p>From caching hierarchies to async non-blocking runtimes, I eliminate bottlenecks so systems stay rock-solid under immense load.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">🧠</div>
+              <div class="highlight-content">
+                <h4>Agentic AI & LLM Systems</h4>
+                <p>Architecting multi-agent reasoning graphs with self-healing feedback loops, semantic caching, and strict deterministic evaluations.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">🎨</div>
+              <div class="highlight-content">
+                <h4>Aesthetic Craftsmanship</h4>
+                <p>Believer in high-art UI design: fluid glassmorphism, responsive spring transitions, and tactile user feedback.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS & TECH MATRIX ==================== -->
+    <section class="section-wrapper" id="skills" aria-labelledby="skills-section-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Capabilities</div>
+          <h2 class="section-title" id="skills-section-heading">Architectural & <span class="gradient-text">Tech Matrix</span></h2>
+          <p class="section-subtitle">Deep expertise across modern programming runtimes, distributed cloud infrastructure, and AI engineering.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="skills-filter-bar">
+          <button class="filter-btn skill-filter-btn active" data-filter="all" id="filter-skill-all">All Domains</button>
+          <button class="filter-btn skill-filter-btn" data-filter="frontend" id="filter-skill-frontend">Frontend & UI</button>
+          <button class="filter-btn skill-filter-btn" data-filter="backend" id="filter-skill-backend">Backend & Distributed</button>
+          <button class="filter-btn skill-filter-btn" data-filter="ai" id="filter-skill-ai">AI & Vector Systems</button>
+          <button class="filter-btn skill-filter-btn" data-filter="devops" id="filter-skill-devops">Cloud & DevOps</button>
+        </div>
+
+        <div class="skills-grid" id="skills-cards-container">
+          <!-- Skill 1 -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-info">
+                <div class="skill-icon">⚛️</div>
+                <div>
+                  <div class="skill-name">TypeScript / React 19</div>
+                  <div class="skill-category-badge">Frontend Architecture</div>
+                </div>
+              </div>
+              <span style="font-family: var(--font-mono); font-weight: 700; color: var(--accent-cyan);">96%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="width: 96%;"></div>
+            </div>
+            <div class="skill-footer">
+              <span>Next.js, State Management</span>
+              <span>5 Years</span>
+            </div>
+          </div>
+
+          <!-- Skill 2 -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-info">
+                <div class="skill-icon">🦀</div>
+                <div>
+                  <div class="skill-name">Rust & Tokio</div>
+                  <div class="skill-category-badge">High Performance</div>
+                </div>
+              </div>
+              <span style="font-family: var(--font-mono); font-weight: 700; color: var(--accent-cyan);">90%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="width: 90%;"></div>
+            </div>
+            <div class="skill-footer">
+              <span>Memory Safety, Async Run</span>
+              <span>3 Years</span>
+            </div>
+          </div>
+
+          <!-- Skill 3 -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-info">
+                <div class="skill-icon">🔷</div>
+                <div>
+                  <div class="skill-name">Go (Golang)</div>
+                  <div class="skill-category-badge">Microservices & Concurrency</div>
+                </div>
+              </div>
+              <span style="font-family: var(--font-mono); font-weight: 700; color: var(--accent-cyan);">94%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="width: 94%;"></div>
+            </div>
+            <div class="skill-footer">
+              <span>gRPC, Goroutines, Channels</span>
+              <span>4 Years</span>
+            </div>
+          </div>
+
+          <!-- Skill 4 -->
+          <div class="skill-card" data-category="ai">
+            <div class="skill-card-top">
+              <div class="skill-info">
+                <div class="skill-icon">🧠</div>
+                <div>
+                  <div class="skill-name">LangGraph & Agent Loops</div>
+                  <div class="skill-category-badge">Autonomous AI</div>
+                </div>
+              </div>
+              <span style="font-family: var(--font-mono); font-weight: 700; color: var(--accent-cyan);">95%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="width: 95%;"></div>
+            </div>
+            <div class="skill-footer">
+              <span>Dynamic Routing, Multi-Agent</span>
+              <span>3 Years</span>
+            </div>
+          </div>
+
+          <!-- Skill 5 -->
+          <div class="skill-card" data-category="ai">
+            <div class="skill-card-top">
+              <div class="skill-info">
+                <div class="skill-icon">⚡</div>
+                <div>
+                  <div class="skill-name">VectorDBs & RAG</div>
+                  <div class="skill-category-badge">Data Engineering</div>
+                </div>
+              </div>
+              <span style="font-family: var(--font-mono); font-weight: 700; color: var(--accent-cyan);">92%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="width: 92%;"></div>
+            </div>
+            <div class="skill-footer">
+              <span>Qdrant, Pinecone, Embeddings</span>
+              <span>3 Years</span>
+            </div>
+          </div>
+
+          <!-- Skill 6 -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-info">
+                <div class="skill-icon">🌌</div>
+                <div>
+                  <div class="skill-name">WebGL & Three.js</div>
+                  <div class="skill-category-badge">Creative Visuals</div>
+                </div>
+              </div>
+              <span style="font-family: var(--font-mono); font-weight: 700; color: var(--accent-cyan);">88%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="width: 88%;"></div>
+            </div>
+            <div class="skill-footer">
+              <span>Custom GLSL, 60fps Canvases</span>
+              <span>3 Years</span>
+            </div>
+          </div>
+
+          <!-- Skill 7 -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-info">
+                <div class="skill-icon">⚡</div>
+                <div>
+                  <div class="skill-name">Redis & ClickHouse</div>
+                  <div class="skill-category-badge">Distributed Data</div>
+                </div>
+              </div>
+              <span style="font-family: var(--font-mono); font-weight: 700; color: var(--accent-cyan);">93%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="width: 93%;"></div>
+            </div>
+            <div class="skill-footer">
+              <span>Pub/Sub, Stream Pipelines</span>
+              <span>4 Years</span>
+            </div>
+          </div>
+
+          <!-- Skill 8 -->
+          <div class="skill-card" data-category="devops">
+            <div class="skill-card-top">
+              <div class="skill-info">
+                <div class="skill-icon">☁️</div>
+                <div>
+                  <div class="skill-name">Kubernetes & Docker</div>
+                  <div class="skill-category-badge">Cloud Orchestration</div>
+                </div>
+              </div>
+              <span style="font-family: var(--font-mono); font-weight: 700; color: var(--accent-cyan);">91%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="width: 91%;"></div>
+            </div>
+            <div class="skill-footer">
+              <span>Helm, CI/CD, Istio Mesh</span>
+              <span>4 Years</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS ==================== -->
+    <section class="section-wrapper" id="projects" aria-labelledby="projects-section-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Flagship Systems</div>
+          <h2 class="section-title" id="projects-section-heading">Featured <span class="gradient-text">Architectural Projects</span></h2>
+          <p class="section-subtitle">Real-world production platforms handling millions of queries, high concurrency, and autonomous workflows.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="skills-filter-bar">
+          <button class="filter-btn project-filter-btn active" data-filter="all" id="filter-proj-all">All Projects</button>
+          <button class="filter-btn project-filter-btn" data-filter="ai" id="filter-proj-ai">AI & Autonomous Agents</button>
+          <button class="filter-btn project-filter-btn" data-filter="cloud" id="filter-proj-cloud">Cloud & Distributed</button>
+          <button class="filter-btn project-filter-btn" data-filter="creative" id="filter-proj-creative">WebGL & Creative 3D</button>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- Project 1: Cognitix -->
+          <article class="project-card" data-category="ai" id="project-card-cognitix">
+            <div class="project-image-wrapper">
+              <div class="project-badges">
+                <span class="project-badge">AI / Agents</span>
+                <span class="project-badge" style="color: #34d399; border-color: rgba(52, 211, 153, 0.4);">98.6% Accuracy</span>
+              </div>
+              <img src="assets/project-nexus.jpg" alt="Cognitix AI Agent Orchestration Dashboard" class="project-img" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <span>Cognitix Orchestrator</span>
+                <span style="font-size: 1rem; color: var(--accent-cyan);">⚡</span>
+              </h3>
+              <p class="project-desc">
+                Enterprise-scale autonomous multi-agent reasoning framework. Coordinates distributed LLM micro-agents with dynamic graph execution, memory caching, and runtime self-correction loops.
+              </p>
+              <div class="project-metric-banner">
+                <span>📈 Metric:</span>
+                <strong>154 Active Nodes • 1.2M Calls/Day • Sub-15ms Dispatch</strong>
+              </div>
+              <div class="project-tags">
+                <span class="tag-pill">Python</span>
+                <span class="tag-pill">LangGraph</span>
+                <span class="tag-pill">FastAPI</span>
+                <span class="tag-pill">Redis</span>
+                <span class="tag-pill">Docker</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="project-link-btn" id="proj1-preview">Live Demo ↗</a>
+                <button class="deep-dive-btn" data-project="cognitix" id="proj1-deepdive">
+                  Architecture Deep Dive 🔍
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Synapse Cloud -->
+          <article class="project-card" data-category="cloud" id="project-card-synapse">
+            <div class="project-image-wrapper">
+              <div class="project-badges">
+                <span class="project-badge">Distributed Telemetry</span>
+                <span class="project-badge" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.4);">1.4M RPS</span>
+              </div>
+              <img src="assets/project-hyperion.jpg" alt="Synapse Cloud Distributed Telemetry Dashboard" class="project-img" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <span>Synapse Cloud Edge</span>
+                <span style="font-size: 1rem; color: var(--accent-cyan);">🌐</span>
+              </h3>
+              <p class="project-desc">
+                Global edge observability mesh ingesting massive telemetry streams. Utilizes zero-copy eBPF kernel probes, Raft state replication, and high-density ClickHouse storage for real-time analytics.
+              </p>
+              <div class="project-metric-banner">
+                <span>📈 Metric:</span>
+                <strong>1.4M RPS Ingestion • 24.1ms P99 Query • 1.2 PB Analyzed</strong>
+              </div>
+              <div class="project-tags">
+                <span class="tag-pill">Go</span>
+                <span class="tag-pill">Rust</span>
+                <span class="tag-pill">eBPF</span>
+                <span class="tag-pill">ClickHouse</span>
+                <span class="tag-pill">WebSockets</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="project-link-btn" id="proj2-preview">Live Demo ↗</a>
+                <button class="deep-dive-btn" data-project="hyperion" id="proj2-deepdive">
+                  Architecture Deep Dive 🔍
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Genesis 3D / Lumina -->
+          <article class="project-card" data-category="creative" id="project-card-lumina">
+            <div class="project-image-wrapper">
+              <div class="project-badges">
+                <span class="project-badge">WebGL / WebGPU</span>
+                <span class="project-badge" style="color: #c084fc; border-color: rgba(192, 132, 252, 0.4);">60 FPS 4K</span>
+              </div>
+              <img src="assets/project-lumina.jpg" alt="Genesis 3D WebGL Node Graph Shader Suite" class="project-img" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <span>Genesis 3D Shader Suite</span>
+                <span style="font-size: 1rem; color: var(--accent-cyan);">✨</span>
+              </h3>
+              <p class="project-desc">
+                Interactive web-based node-graph shader development suite. Compiles visual procedural logic directly to optimized GLSL shaders with real-time viewport raymarching and WASM physics.
+              </p>
+              <div class="project-metric-banner">
+                <span>📈 Metric:</span>
+                <strong>60 FPS in 4K Viewport • 244k Mesh Vertices • &lt;2.1MB Bundle</strong>
+              </div>
+              <div class="project-tags">
+                <span class="tag-pill">Three.js</span>
+                <span class="tag-pill">GLSL</span>
+                <span class="tag-pill">WebAssembly</span>
+                <span class="tag-pill">TypeScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="project-link-btn" id="proj3-preview">Live Demo ↗</a>
+                <button class="deep-dive-btn" data-project="lumina" id="proj3-deepdive">
+                  Architecture Deep Dive 🔍
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: ChronoDB -->
+          <article class="project-card" data-category="cloud" id="project-card-chronodb">
+            <div class="project-image-wrapper" style="background: radial-gradient(circle at center, #172033 0%, #080a11 100%); display: flex; align-items: center; justify-content: center;">
+              <div class="project-badges">
+                <span class="project-badge">Systems / Performance</span>
+                <span class="project-badge" style="color: #fbbf24; border-color: rgba(251, 191, 36, 0.4);">&lt;4ms P99</span>
+              </div>
+              <div style="text-align: center; padding: 20px;">
+                <div style="font-size: 3rem; margin-bottom: 8px;">⏱️</div>
+                <div style="font-family: var(--font-mono); font-size: 1.1rem; color: var(--accent-cyan); font-weight: 700;">ChronoDB Engine</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">High-Throughput Time-Series In-Memory Core</div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <span>ChronoDB Time-Series Core</span>
+                <span style="font-size: 1rem; color: var(--accent-cyan);">⚡</span>
+              </h3>
+              <p class="project-desc">
+                High-performance columnar storage engine written in Rust for real-time metric streams. Employs Gorilla XOR delta compression to shrink memory footprint by 82% without GC spikes.
+              </p>
+              <div class="project-metric-banner">
+                <span>📈 Metric:</span>
+                <strong>10x Write Throughput • 82% RAM Compression • Zero-GC P99</strong>
+              </div>
+              <div class="project-tags">
+                <span class="tag-pill">Rust</span>
+                <span class="tag-pill">Tokio</span>
+                <span class="tag-pill">gRPC</span>
+                <span class="tag-pill">Memory-Mapped WAL</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="project-link-btn" id="proj4-preview">Live Demo ↗</a>
+                <button class="deep-dive-btn" data-project="chronodb" id="proj4-deepdive">
+                  Architecture Deep Dive 🔍
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE & ROADMAP ==================== -->
+    <section class="section-wrapper" id="experience" aria-labelledby="experience-section-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Career Journey</div>
+          <h2 class="section-title" id="experience-section-heading">Experience & <span class="gradient-text">Impact Highlights</span></h2>
+          <p class="section-subtitle">A track record of engineering leadership, scalable shipping, and technical problem solving.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2024 — PRESENT</div>
+              <h3 class="timeline-role">Senior Systems & AI Architect</h3>
+              <span class="timeline-company">Cognitive Labs • Distributed Systems & AI</span>
+              <ul class="timeline-bullets">
+                <li>Spearheaded development of an autonomous multi-agent orchestration engine supporting 1.2M daily agent executions with 99.9% uptime.</li>
+                <li>Designed an intelligent semantic caching layer on Redis that decreased OpenAI and Anthropic API token spend by 65%.</li>
+                <li>Mentored an engineering squad of 8 across backend microservices and high-throughput vector ingestion pipelines.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2022 — 2024</div>
+              <h3 class="timeline-role">Full-Stack Cloud Engineer</h3>
+              <span class="timeline-company">HyperScale Systems • Observability & Edge Cloud</span>
+              <ul class="timeline-bullets">
+                <li>Built real-time telemetry streaming platforms handling 1.4M events/sec using Go, Rust, and WebSockets.</li>
+                <li>Engineered responsive React/TypeScript operational dashboards loaded by over 30,000 active devops engineers daily.</li>
+                <li>Slashed client-side initial bundle load times by 52% using dynamic route chunking and custom WebGL shaders.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2020 — 2022</div>
+              <h3 class="timeline-role">Software Engineer</h3>
+              <span class="timeline-company">Apex Software • High-Performance Web Apps</span>
+              <ul class="timeline-bullets">
+                <li>Engineered scalable REST & GraphQL microservices in Node.js and Python with PostgreSQL query optimization.</li>
+                <li>Implemented cross-platform web client features, automated end-to-end Cypress test suites, and CI/CD pipelines in GitHub Actions.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== INTERACTIVE MINI-LAB / TERMINAL ==================== -->
+    <section class="section-wrapper" id="playground" aria-labelledby="playground-section-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Interactive Sandbox</div>
+          <h2 class="section-title" id="playground-section-heading">Developer <span class="gradient-text">Live Terminal</span></h2>
+          <p class="section-subtitle">Interact with my portfolio directly through an in-browser CLI. Type commands or click quick suggestions below.</p>
+        </div>
+
+        <div class="terminal-wrapper" id="terminal-container">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+            <div class="terminal-title">anirudh-portfolio — zsh — 80x24</div>
+            <div class="terminal-quick-cmds">
+              <button class="term-quick-btn" data-cmd="help">help</button>
+              <button class="term-quick-btn" data-cmd="about">about</button>
+              <button class="term-quick-btn" data-cmd="skills">skills</button>
+              <button class="term-quick-btn" data-cmd="projects">projects</button>
+              <button class="term-quick-btn" data-cmd="matrix">matrix</button>
+              <button class="term-quick-btn" data-cmd="clear">clear</button>
+            </div>
+          </div>
+
+          <div class="terminal-body" id="terminal-body">
+            <div class="term-welcome">
+              Welcome to Anirudh's Interactive Shell v2.4.0 [x86_64-quantum-darwin]<br>
+              Type <strong style="color: var(--accent-cyan);">help</strong> to see all supported instructions, or click the quick action pills above.
+            </div>
+
+            <div class="term-prompt-line">
+              <label for="terminal-input" class="term-prompt-label">visitor@anirudh:~$</label>
+              <input type="text" id="terminal-input" class="term-input" autocomplete="off" spellcheck="false" placeholder="type a command (e.g. 'skills' or 'help')...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT & COLLABORATION ==================== -->
+    <section class="section-wrapper" id="contact" aria-labelledby="contact-section-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Direct Transmission</div>
+          <h2 class="section-title" id="contact-section-heading">Initiate <span class="gradient-text">Connection</span></h2>
+          <p class="section-subtitle">Have an innovative project, an architectural challenge, or a high-impact position in mind? Let's discuss.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Channels -->
+          <div class="contact-info-cards">
+            <div class="contact-card" id="contact-email-card">
+              <div class="contact-card-left">
+                <div class="contact-icon">📬</div>
+                <div>
+                  <div class="contact-card-title">Primary Inquiries</div>
+                  <div class="contact-card-value">anirudh.eng@outlook.com</div>
+                </div>
+              </div>
+              <button class="copy-icon-btn copy-email-btn" id="contact-copy-btn" title="Copy to clipboard">
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <div class="contact-card" id="contact-timezone-card">
+              <div class="contact-card-left">
+                <div class="contact-icon">🌍</div>
+                <div>
+                  <div class="contact-card-title">Base Location & Timezone</div>
+                  <div class="contact-card-value">India (IST / UTC+5:30)</div>
+                </div>
+              </div>
+              <span style="font-size: 0.8rem; color: #34d399; font-family: var(--font-mono);">Responsive &lt; 2h</span>
+            </div>
+
+            <div class="contact-card" id="contact-socials-card">
+              <div class="contact-card-left">
+                <div class="contact-icon">💬</div>
+                <div>
+                  <div class="contact-card-title">Digital Coordinates</div>
+                  <div class="contact-card-value">Discord: anirudh#0001</div>
+                </div>
+              </div>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="copy-icon-btn">GitHub ↗</a>
+            </div>
+          </div>
+
+          <!-- Working Interactive Contact Form -->
+          <div class="contact-form-box">
+            <form id="contact-form" autocomplete="on">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <input type="text" id="form-name" class="form-control" placeholder="e.g. Sarah Connor" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Your Email</label>
+                <input type="email" id="form-email" class="form-control" placeholder="e.g. sarah@domain.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-topic" class="form-label">Project Type / Inquiry</label>
+                <input type="text" id="form-topic" class="form-control" placeholder="e.g. Distributed Architecture, AI Agents, Full-Stack Contract">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message Payload</label>
+                <textarea id="form-message" class="form-control" placeholder="Describe the mission, technical scope, or questions..." required></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn" id="form-submit-btn">
+                <span>Dispatch Transmission</span>
+                <span aria-hidden="true">🚀</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== ARCHITECTURE DEEP-DIVE MODAL ==================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close dialog">✕</button>
+      <span class="modal-badge" id="modal-badge">Architecture Spec</span>
+      <h3 class="modal-title" id="modal-title">Project Title</h3>
+      <p class="modal-overview" id="modal-overview">System overview description.</p>
+
+      <h4 class="modal-section-h3">⚡ Architectural Design & Patterns</h4>
+      <ul class="modal-list" id="modal-arch-list"></ul>
+
+      <h4 class="modal-section-h3">📊 Telemetry & Benchmark Impact</h4>
+      <ul class="modal-list" id="modal-metrics-list"></ul>
+
+      <div style="text-align: right; margin-top: 24px;">
+        <button class="primary-btn" onclick="document.getElementById('modal-close').click()">
+          <span>Done Exploring</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== COMMAND PALETTE MODAL (Ctrl+K) ==================== -->
+  <div class="palette-overlay" id="palette-overlay" role="dialog" aria-modal="true" aria-label="Command Palette">
+    <div class="palette-box">
+      <div class="palette-input-wrap">
+        <span class="palette-icon">⌘</span>
+        <input type="text" id="palette-input" class="palette-input" placeholder="Type a command or jump to section..." autocomplete="off">
+        <kbd class="cmd-key">ESC</kbd>
+      </div>
+
+      <div class="palette-results" id="palette-results">
+        <div class="palette-item" data-action="goto-projects">
+          <div class="palette-item-left">
+            <span class="palette-item-icon">⚡</span>
+            <span class="palette-item-title">Jump to Featured Projects</span>
+          </div>
+          <span class="palette-item-shortcut">G P</span>
+        </div>
+
+        <div class="palette-item" data-action="goto-skills">
+          <div class="palette-item-left">
+            <span class="palette-item-icon">🛠️</span>
+            <span class="palette-item-title">Jump to Skills & Tech Matrix</span>
+          </div>
+          <span class="palette-item-shortcut">G S</span>
+        </div>
+
+        <div class="palette-item" data-action="goto-terminal">
+          <div class="palette-item-left">
+            <span class="palette-item-icon">💻</span>
+            <span class="palette-item-title">Open Developer Live Terminal</span>
+          </div>
+          <span class="palette-item-shortcut">G T</span>
+        </div>
+
+        <div class="palette-item" data-action="goto-experience">
+          <div class="palette-item-left">
+            <span class="palette-item-icon">📜</span>
+            <span class="palette-item-title">Jump to Experience & Journey</span>
+          </div>
+          <span class="palette-item-shortcut">G E</span>
+        </div>
+
+        <div class="palette-item" data-action="goto-contact">
+          <div class="palette-item-left">
+            <span class="palette-item-icon">📬</span>
+            <span class="palette-item-title">Jump to Contact & Inquiries</span>
+          </div>
+          <span class="palette-item-shortcut">G C</span>
+        </div>
+
+        <div class="palette-item" data-action="copy-email">
+          <div class="palette-item-left">
+            <span class="palette-item-icon">📋</span>
+            <span class="palette-item-title">Copy Email Address</span>
+          </div>
+          <span class="palette-item-shortcut">COPY</span>
+        </div>
+
+        <div class="palette-item" data-action="toggle-sound">
+          <div class="palette-item-left">
+            <span class="palette-item-icon">🔊</span>
+            <span class="palette-item-title">Toggle Web Audio Sound Effects</span>
+          </div>
+          <span class="palette-item-shortcut">FX</span>
+        </div>
+
+        <div class="palette-item" data-action="theme-emerald">
+          <div class="palette-item-left">
+            <span class="palette-item-icon">🟢</span>
+            <span class="palette-item-title">Switch Theme: Matrix Emerald</span>
+          </div>
+          <span class="palette-item-shortcut">THEME</span>
+        </div>
+
+        <div class="palette-item" data-action="theme-purple">
+          <div class="palette-item-left">
+            <span class="palette-item-icon">🟣</span>
+            <span class="palette-item-title">Switch Theme: Cyber Purple</span>
+          </div>
+          <span class="palette-item-shortcut">THEME</span>
+        </div>
+
+        <div class="palette-item" data-action="theme-default">
+          <div class="palette-item-left">
+            <span class="palette-item-icon">⚡</span>
+            <span class="palette-item-title">Switch Theme: Obsidian Cyan (Default)</span>
+          </div>
+          <span class="palette-item-shortcut">THEME</span>
+        </div>
+      </div>
+
+      <div class="palette-footer">
+        <span>Navigation: Click item or press Esc to exit</span>
+        <span>Cmd/Ctrl+K</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Mount -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="gradient-text">Anirudh R</span>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal; margin-top: 6px;">
+            Full-Stack Architect • Distributed Systems • AI Orchestration
+          </p>
+        </div>
+
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a href="#hero" class="nav-link">Back to Top ↑</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <button class="copy-email-btn" style="color: var(--accent-cyan); font-size: 0.85rem; font-family: var(--font-mono);">
+            📋 Copy Email
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Anirudh R. Engineered with Vanilla JS, Modern CSS & Passion.</div>
+        <div class="footer-time">
+          <span>🕒 Local Node Time:</span>
+          <span id="live-time-clock">--:--:--</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
